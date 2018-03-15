@@ -1,11 +1,10 @@
 import React from 'react';
-import {
-  Route,
-  Link } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 
 import ContactInfo from './contactInfo/contactInfo'
 
 function Contact({ match }) {
+
   return (
     <div>
       <h1>Contact!</h1>
