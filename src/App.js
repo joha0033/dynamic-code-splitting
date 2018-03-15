@@ -23,7 +23,9 @@ class App extends Component {
 
           <hr />
 
-          <Route exact path='/' component={Welcome} />
+          <Route exact path='/' render={(props) => {
+            return (<Welcome name='Dude'/>)
+          }} />
           <Route path='/about' component={About}/>
           <Route path='/contact' component={Contact}/>
 
