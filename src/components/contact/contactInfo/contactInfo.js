@@ -4,7 +4,7 @@ function switchParams(params){
     switch (params) {
       case 'email':
         return (
-          <div>
+        <div>
           <h3> joha0033@gmail.com </h3>
         </div>)
       case 'phone':

@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import React, { Component } from 'react'
 
 
 class DynamicImport extends Component {
@@ -12,18 +12,9 @@ class DynamicImport extends Component {
         component: mod.default
       })))
   }
-  render () {
+  render() {
     return this.props.children(this.state.component)
   }
 }
-
-// const Contact = (props) => (
-//   <DynamicImport load = {() => import('../contact/contact')}>
-//     {(Component) =>  Component === null
-//       ? <h1>Loading...</h1>
-//       : <Component {...props}/>
-//     }
-//   </DynamicImport>
-// )
 
 export default DynamicImport
